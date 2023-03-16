@@ -1,54 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@500&display=swap");
 body {
   margin: 0px;
   padding: 10px;
   font-family: Arial, Helvetica, sans-serif;
-  background: #101820ff;
+  background: #101820e6;
   min-width: 310px;
+  height: 100vh;
+  display: grid;
+  place-content: center;
 }
+.wrapper {
+  position: relative;
+  width: 300px;
+  border: 5px solid #2bae66ff;
+  padding: 40px;
+  border-radius: 20px;
+  background-color: #101820e6;
+  -webkit-box-shadow: 0px 4px 15px 6px rgba(15, 15, 15, 1);
+  -moz-box-shadow: 0px 4px 15px 6px rgba(15, 15, 15, 1);
+  box-shadow: 0px 4px 15px 6px rgba(15, 15, 15, 1);
+}
+
+.name {
+  width: 100%;
+  height: 100px;
+  background-color: #2bae66ff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  color: #f4f4f4;
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  text-shadow: -2px 2px 4px rgba(15, 15, 15, 1);
+}
+
 input {
   border: 2px solid #2bae66ff;
   padding: 15px;
-  margin: 30px auto;
+  margin-inline: auto;
+  margin-block-start: 100px;
+  margin-block-end: 40px;
   display: block;
-  border-radius: 20px;
+  border-radius: 30px;
   font-size: 15px;
+  outline: none;
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+  width: 86%;
 }
+
+.save {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 #input-btn {
   background-color: #2bae66ff;
   color: #f4f4f4;
   border: none;
-  padding: 13px;
+  padding: 15px;
   margin: auto;
   display: block;
   font-weight: bold;
-  border-radius: 12px;
+  border-radius: 30px;
   font-size: 16px;
-  width: 130px;
+  width: 140px;
+  height: 55px;
+  box-shadow: 0 0 0 0 #f4f4f4 inset;
+  transition: 0.2s ease-in-out;
+}
+
+#input-btn:hover {
+  box-shadow: -140px 0 0 0 inset #f4f4f4;
+  color: #2bae66ff;
+  cursor: pointer;
 }
 #delete-btn {
   background-color: #f4f4f4;
   color: #2bae66ff;
-  border: 1px solid;
-  padding: 12px;
+  border: 2px solid;
+  padding: 15px;
   margin: 10px auto;
   display: block;
   font-weight: bold;
-  border-radius: 12px;
+  border-radius: 30px;
   font-size: 16px;
-  width: 130px;
+  width: 288px;
+  height: 55px;
+  box-shadow: 0 0 0 0 inset #2bae66ff;
+  transition: 0.2s ease-in-out;
 }
+
+#delete-btn:hover {
+  cursor: pointer;
+  color: #f4f4f4;
+  box-shadow: -288px 0 0 0 inset #2bae66ff;
+}
+
 #tab-btn {
   background-color: #2bae66ff;
   color: #f4f4f4;
   border: none;
-  padding: 13px;
+  padding: 15px;
   margin: 10px auto;
   display: block;
   font-weight: bold;
-  border-radius: 12px;
+  border-radius: 30px;
   font-size: 16px;
-  width: 130px;
+  width: 140px;
+  height: 55px;
+  box-shadow: 0 0 0 0 #f4f4f4 inset;
+  transition: 0.2s ease-in-out;
 }
+
+#tab-btn:hover {
+  box-shadow: -140px 0 0 0 inset #f4f4f4;
+  color: #2bae66ff;
+  cursor: pointer;
+}
+
 #ul-el {
   list-style: none;
   color: #2bae66ff;
