@@ -2,8 +2,8 @@ let myLeads = []
 const inputBtn = document.getElementById("input-btn")
 const deleteBtn = document.getElementById("delete-btn")
 const tabBtn = document.getElementById("tab-btn")
-const inputEl=document.getElementById("input-el")
-const ulEl=document.getElementById("ul-el")
+const inputEl = document.getElementById("input-el")
+const ulEl = document.getElementById("ul-el")
 
 inputBtn.addEventListener("click", function() {
     console.log("Button Clicked")
@@ -18,6 +18,7 @@ function render(leads){
                     ${leads[i]}
                 </a>
             </li>
+
         `
         
     }
@@ -56,4 +57,3 @@ deleteBtn.addEventListener("click", function(){
     myLeads=[]
     render(myLeads)
 })
-
